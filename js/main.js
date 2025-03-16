@@ -1,3 +1,11 @@
+document.addEventListener('contextmenu', event => event.preventDefault());
+document.addEventListener('keydown', event => {
+    if (event.ctrlKey && (event.key === 'c' || event.key === 'u' || event.key === 's' || event.key === 'p')) {
+        event.preventDefault();
+    }
+});
+
+
 (function ($) {
     "use strict";
 
